@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM python:3
 
 RUN apt update
 
@@ -11,4 +11,4 @@ WORKDIR /usr/app/src
 COPY . .
 
 
-CMD ["python3", "main.py"]
+CMD ["python3", "./main.py"]
